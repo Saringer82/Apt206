@@ -1,0 +1,5 @@
+mix-manifest.json
+.idea
+/node_modules/
+/vendor/
+hot

@@ -1,0 +1,39 @@
+html{
+    font-size: 16px;
+}
+
+body {
+    background-color: orange;
+    font-size: $font-size-base;
+    font-family: $font-base;
+}
+
+.grey-bar {
+    background-color: $slate;
+    position: fixed;
+    z-index: 5;
+    box-sizing: border-box;
+
+    &__top {
+        height: 40px;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    &__left {
+        left: 0;
+        top: 0;
+        width: 40px;
+        height: 100vh;
+    }
+
+    &__right {
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 100vh;
+    }
+}
+
+

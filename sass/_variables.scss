@@ -1,0 +1,32 @@
+/* ------ Fonts ------ */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap');
+
+$font-base: 'Open Sans', sans-serif;
+
+
+/* ------ Layout ------ */
+$font-size-base: 16px;
+
+/* ------ Headings ------ */
+
+/* ------ Animation ------ */
+
+/* ------ Colors ------ */
+$brand-primary: blue;
+$grey: #dfdfdf;
+$grey-light: #eeeeee;
+$grey-dark: #C6C6C6;
+$slate: #4b4b4b;
+$sub-menu: rgba(75, 75, 75, 0.3);
+$overview: rgba(255, 255, 255, 0.6);
+
+
+/* ------ Media breaks ------ */
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+$screen-sm-max: 767px;
+$screen-md-max: 991px;
+$screen-lg-max: 1199px;
