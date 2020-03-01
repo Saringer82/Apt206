@@ -1,16 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html{
     font-size: 16px;
 }
 
 body {
-    background-color: orange;
+    background-color: $background;
     font-size: $font-size-base;
     font-family: $font-base;
     margin: 0;
 }
 
+.logo {
+    box-sizing: border-box;
+    height:136px;
+    top: 0;
+    right: 5%;
+    position: fixed;
+    z-index: 9999;
+}
+
 .grey-bar {
-    background-color: $slate;
+    background-color: $brand-primary;
     position: fixed;
     z-index: 5;
     box-sizing: border-box;
@@ -37,4 +51,16 @@ body {
     }
 }
 
+menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 
+    ul {
+        li {
+            display: inline;
+            color: white;
+        }
+    }
+}

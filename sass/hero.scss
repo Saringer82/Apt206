@@ -1,0 +1,85 @@
+.hero-section {
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-link {
+    height: 80px;
+    padding: 0;
+    margin: 0 0 0 -40px;
+    z-index: 4;
+
+    &-section {
+        box-sizing: border-box;
+        position: absolute;
+        transform: translate(0, -50%);
+        top: 50%;
+        width: 100%;
+        z-index: 4;
+    }
+
+    h1 {
+        @extend %headings;
+        //box-sizing: border-box;
+        display: inline-block;
+        font-size: 5rem;
+        left: 5%;
+        position: absolute;
+        cursor: pointer;
+
+        &:after {
+            content: attr(data-text);
+            width: 0%;
+            color: $brand-alt;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            transition: 0.5s ease-in-out
+        }
+
+        &:hover {
+            &:after {
+                width: 105%
+            }
+        }
+    }
+}
+
+/* ----------------------------------------------- Hero section fade in ------ */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:.5s;
+    -moz-animation-duration:.5s;
+    animation-duration:.5s;
+
+    &.one {
+        -webkit-animation-delay: 0s;
+        -moz-animation-delay: 0s;
+        animation-delay: 0s;
+    }
+
+    &.two {
+        -webkit-animation-delay: .2s;
+        -moz-animation-delay:.2s;
+        animation-delay: .2s;
+    }
+
+    &.three {
+        -webkit-animation-delay: .4s;
+        -moz-animation-delay: .4s;
+        animation-delay: .4s;
+    }
+}

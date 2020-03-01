@@ -1,9 +1,9 @@
 /* ------ Fonts ------ */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli|Roboto&display=swap');
 
-$font-base: 'Open Sans', sans-serif;
-
+$font-headings: 'Muli', sans-serif;
+$font-base: 'Roboto', sans-serif;
 
 /* ------ Layout ------ */
 $font-size-base: 16px;
@@ -13,13 +13,19 @@ $font-size-base: 16px;
 /* ------ Animation ------ */
 
 /* ------ Colors ------ */
-$brand-primary: blue;
-$grey: #dfdfdf;
-$grey-light: #eeeeee;
-$grey-dark: #C6C6C6;
+$brand-primary: #112848;
 $slate: #4b4b4b;
-$sub-menu: rgba(75, 75, 75, 0.3);
-$overview: rgba(255, 255, 255, 0.6);
+
+$background: #E9E9E9;
+$brand-secondary: #FFC30D;
+
+$brand-alt: #2A443B;
+
+
+
+$blue-dark: #203242;
+$blue-light: #889aa3;
+$border: #dddddd;
 
 
 /* ------ Media breaks ------ */
