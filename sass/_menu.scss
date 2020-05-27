@@ -1,0 +1,78 @@
+#mainNav {
+    min-height: 3.5rem;
+    background-color: #fff;
+
+    @media (min-width: 992px) {
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+        background-color: transparent;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .navbar-toggler {
+        font-size: 150%;
+        padding: 0.75rem;
+        color: $brand-alt;
+        border: 1px solid $brand-alt;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .navbar-nav {
+        .nav-item:hover {
+            color: fade(#fff, 80%);
+            outline: none;
+            background-color: transparent;
+        }
+
+        .nav-item:active, .nav-item:focus {
+            outline: none;
+            background-color: transparent;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #mainNav .nav-link {
+        transition: none;
+        padding: 2rem 1.5rem;
+        color: #000000;
+    }
+
+    #mainNav .nav-link:hover {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    #mainNav .nav-link:active {
+        color: #fff;
+    }
+
+    #mainNav.navbar-shrink {
+        background-color: #fff;
+    }
+
+    #mainNav.navbar-shrink .navbar-brand {
+        color: #000000;
+    }
+
+    #mainNav.navbar-shrink .nav-link {
+        color: #000000;
+        padding: 2rem 1.5rem;
+    }
+
+    #mainNav.navbar-shrink .nav-link:hover {
+        color: $brand-secondary;
+    }
+
+    #mainNav.navbar-shrink .nav-link:active {
+        color: $brand-alt;
+    }
+
+    #mainNav.navbar-shrink .nav-link.active {
+        color: $brand-alt;
+        outline: none;
+    }
+}

@@ -1,13 +1,23 @@
 /* Headings
 ----------------------------------------------------------------------------- */
+%headings {
+    font-family: $font-headings;
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
-h2, h3, h5, h6 {
+h3, h5, h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
 
+h2 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
 h1, h2, h3, h4 {
-    text-transform: uppercase;
+    @extend %headings;
 }
 
 /* Paragraphs
@@ -20,41 +30,4 @@ p, ol, ul, dl, blockquote, figure {
 
 hr {
     margin: 1rem 0;
-}
-
-%headings {
-    color: $brand-primary;
-    font-family: $font-headings;
-    font-weight: 400;
-    left: 5%;
-    letter-spacing: -3px;
-    text-transform: uppercase;
-}
-
-/* Anchors
------------------------------------------------------------------------------ */
-
-
-
-/* Buttons
------------------------------------------------------------------------------ */
-
-.btn {
-    &-primary {
-        background-color: $brand-primary;
-        border: none;
-        border-radius: 0;
-        color: white;
-        font-size: 1rem;
-        letter-spacing: .5px;
-        min-width: 150px;
-        padding: .5rem 1rem;
-        text-align: center;
-        transition: background-color 0.4s;
-
-        &:hover {
-            background-color: $slate;
-            text-decoration: none;
-        }
-    }
 }
